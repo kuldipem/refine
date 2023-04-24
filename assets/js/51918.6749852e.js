@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocumentation=self.webpackChunkdocumentation||[]).push([[51918],{51918:e=>{e.exports=JSON.parse('{"filePath":"/home/runner/work/refine/refine/packages/antd/src/index.tsx","description":"","displayName":"ThemedLayoutContextProvider","props":{},"generatedAt":1682357655580}')}}]);
