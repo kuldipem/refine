@@ -36,6 +36,7 @@ describe("form-antd-use-form", () => {
     };
 
     const submitForm = () => {
+        cy.getAntdNotification;
         return cy.getSaveButton().click();
     };
 

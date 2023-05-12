@@ -22,6 +22,11 @@ interface IResourceEditParams {
     ui: "antd" | "material-ui" | "chakra-ui" | "mantine";
 }
 
+interface IGetChakraUIFormItemErrorParams {
+    id: string;
+    type?: "text" | "select";
+}
+
 declare namespace Cypress {
     interface Chainable {
         resourceList(): Chainable<void>;
@@ -35,6 +40,9 @@ declare namespace Cypress {
         getSaveButton(): Chainable<JQuery<HTMLElement>>;
         getCreateButton(): Chainable<JQuery<HTMLElement>>;
         getDeleteButton(): Chainable<JQuery<HTMLElement>>;
+        getEditButton(): Chainable<JQuery<HTMLElement>>;
+        getListButton(): Chainable<JQuery<HTMLElement>>;
+        getShowButton(): Chainable<JQuery<HTMLElement>>;
         getAntdNotification(): Chainable<JQuery<HTMLElement>>;
         setAntdDropdown(
             params: ISetAntdDropdownParams,
@@ -44,6 +52,10 @@ declare namespace Cypress {
         ): Chainable<JQuery<HTMLElement>>;
         getAntdFormItemError(
             params: IGetAntdFormItemErrorParams,
+        ): Chainable<JQuery<HTMLElement>>;
+        getChakraUINotification(): Chainable<JQuery<HTMLElement>>;
+        getChakraUIFormItemError(
+            params: IGetChakraUIFormItemErrorParams,
         ): Chainable<JQuery<HTMLElement>>;
     }
 }

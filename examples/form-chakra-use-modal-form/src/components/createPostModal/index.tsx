@@ -62,7 +62,7 @@ export const CreatePostModal: React.FC<UseModalFormReturnType<IPost>> = ({
                         <FormControl mb="3" isInvalid={!!errors?.status}>
                             <FormLabel>Status</FormLabel>
                             <Select
-                                id="content"
+                                id="status"
                                 placeholder="Select Post Status"
                                 {...register("status", {
                                     required: "Status is required",
